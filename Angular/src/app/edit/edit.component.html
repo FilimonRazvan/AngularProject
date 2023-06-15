@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Add a forecast! </h1>
+<div mat-dialog-content>
+  <p>ID</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Selected ID</mat-label>
+    <input matInput disabled [(ngModel)]="weather.id" name="id">
+    <mat-icon matSuffix>fingerprint</mat-icon>
+  </mat-form-field>
+
+  <p>TemperatureC</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Insert Temperature</mat-label>
+    <input matInput [(ngModel)]="weather.temperatureC" name="temperatureC">
+    <mat-icon matSuffix>cloud</mat-icon>
+  </mat-form-field>
+
+  <p>Summary</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Insert Summary</mat-label>
+    <input matInput [(ngModel)]="weather.summary" name="summary">
+    <mat-icon matSuffix>edit</mat-icon>
+  </mat-form-field>
+</div>
+
+
+<mat-dialog-actions align="center">
+  <button mat-raised-button color="accent" mat-dialog-close (click)="updateWeather()">Edit</button>
+  <button mat-raised-button color="warn" mat-dialog-close>Back</button>
+</mat-dialog-actions>

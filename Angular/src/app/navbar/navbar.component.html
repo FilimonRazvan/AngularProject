@@ -1,0 +1,10 @@
+<nav mat-tab-nav-bar
+  [tabPanel]="tabPanel">
+  <a mat-tab-link
+    *ngFor="let link of links"
+    (click)="activeLink = link"
+    [active]="activeLink == link"> {{link}} </a>
+  <a  mat-tab-link target="_blank" href="https://vremea.ido.ro/Arad.htm">WeatherLink</a>
+</nav>
+
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

@@ -1,0 +1,14 @@
+<div>
+  <h1 mat-dialog-title class="whiteColor">You are about to delete a forecast!</h1>
+  <div mat-dialog-content>
+    <div class="container" align="center">
+      <div>
+        <h1 class="whiteColor">Are you sure?</h1>
+      </div>
+      <div>
+        <button mat-raised-button (click)="close(true)"   mat-dialog-close>Confirm</button>
+        <button mat-raised-button class="spaced"  color="warn" (click)="close(false)">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
